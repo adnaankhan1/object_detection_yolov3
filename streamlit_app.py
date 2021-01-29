@@ -7,13 +7,13 @@ import urllib.request
 import tempfile
 import base64
 
-weight = "yolov3.weights"
-cfg = "yolov3.cfg"
+weight = "https://github.com/Armaan-20/object_detection_yolov3/blob/update/yolov3.weights"
+cfg = "https://github.com/Armaan-20/object_detection_yolov3/blob/update/yolov3.cfg"
 
 net = cv2.dnn.readNet(weight, cfg)
 
 classes = []
-with open("coco.names", "r") as f:
+with open("https://github.com/Armaan-20/object_detection_yolov3/blob/update/coco.names", "r") as f:
     classes = f.read().splitlines()
 print(classes)
 def load_image(img):
