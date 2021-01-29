@@ -7,13 +7,13 @@ import urllib.request
 import tempfile
 import base64
 
-weight = yolov3.weights
-cfg = darknet/cfg/yolov3.cfg
+weight = "yolov3.weights"
+cfg = "darknet/cfg/yolov3.cfg"
 
-net = cv2.dnn.readNet(weight, cfg)
+net = cv2.dnn.readNet(cfg, weight)
 
 classes = []
-with open(darknet/data/coco.names, "r") as f:
+with open("darknet/data/coco.names", "r") as f:
     classes = f.read().splitlines()
 print(classes)
 def load_image(img):
