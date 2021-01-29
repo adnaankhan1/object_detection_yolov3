@@ -7,8 +7,8 @@ import urllib.request
 import tempfile
 import base64
 
-weight = r'C:\Users\Armaan\Downloads\yolov3.weights.1'
-cfg = r'C:\Users\Armaan\darknet\cfg\yolov3.cfg'
+weight = yolov3.weights.1
+cfg = yolov3.cfg
 
 net = cv2.dnn.readNet(weight, cfg)
 
