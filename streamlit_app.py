@@ -9,7 +9,8 @@ import base64
 
 weight = 'yolov3.weights'
 cfg = 'darknet/cfg/yolov3.cfg'
-
+%cd darknet
+!make
 net = cv2.dnn.readNet(weight, cfg)
 
 classes = []
