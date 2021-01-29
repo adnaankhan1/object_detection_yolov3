@@ -7,9 +7,10 @@ import urllib.request
 import tempfile
 import base64
 
+weight = ''
+cfg = 'darknet/cfg/yolov3.cfg'
 
-
-net = cv2.dnn.readNet('yolov3.weights', 'darknet/cfg/yolov3.cfg')
+net = cv2.dnn.readNet(weight, cfg)
 
 classes = []
 with open('darknet/data/coco.names', "r") as f:
