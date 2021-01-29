@@ -8,7 +8,7 @@ import tempfile
 import base64
 
 weight = 'yolov3.weights'
-cfg = 'darknet/cfg/yolov3.cfg'
+cfg = './darknet/cfg/yolov3.cfg'
 
 net = cv2.dnn.readNet(weight, cfg)
 
