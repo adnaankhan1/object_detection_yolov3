@@ -7,6 +7,7 @@ import urllib.request
 import tempfile
 import base64
 import keras
+import matplotlib.pyplot as plt
 from keras.utils.data_utils import get_file
 weight = get_file(
             'the name under the model will be saved',
@@ -81,7 +82,7 @@ def main():
          st.image(img1, width = 750)
          st.success('FINISHED')
          st.balloons()
-         cv2.destroyAllWindows()
+         
      
      else:
          uploaded_file = st.file_uploader('UPLOAD VIDEO', type = ['mp4'])
@@ -131,7 +132,7 @@ def main():
                      cv2.putText(img, label + " " + confidence, (x, y+20), font, 2, (255,255,255), 2)        
              stframe.image(img, width = 750)
              cv2.waitKey(0)
-             cv2.destroyAllWindows()   
+                
         
 if __name__ == '__main__':
      main()
