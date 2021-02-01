@@ -6,9 +6,10 @@ import numpy as np
 import urllib.request
 import tempfile
 import base64
-url = 'https://media.githubusercontent.com/media/Armaan-20/object_detection_yolov3/update/yolov3-tiny.weights'
-w = urllib.request.urlopen(url)
-weight = w.read().decode('UTF-8')
+from keras.utils.data_utils import get_file
+weight = get_file(
+            'the name under the model will be saved',
+            'https://media.githubusercontent.com/media/Armaan-20/object_detection_yolov3/update/yolov3-tiny.weights')
 cfg = 'darknet/cfg/yolov3-tiny.cfg'
 
 net = cv2.dnn.readNet(weight, cfg)
