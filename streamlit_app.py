@@ -10,7 +10,7 @@ import keras
 from keras.utils.data_utils import get_file
 weight = get_file(
             'the name under the model will be saved',
-            'https://media.githubusercontent.com/media/Armaan-20/object_detection_yolov3/update/yolov3.weights')
+            'https://pjreddie.com/media/files/yolov3.weights')
 cfg = 'yolov3.cfg'
 
 net = cv2.dnn.readNet(weight, cfg)
