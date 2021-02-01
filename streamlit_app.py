@@ -6,6 +6,7 @@ import numpy as np
 import urllib.request
 import tempfile
 import base64
+import keras
 from keras.utils.data_utils import get_file
 weight = get_file(
             'the name under the model will be saved',
