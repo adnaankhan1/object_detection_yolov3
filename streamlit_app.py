@@ -11,7 +11,7 @@ from keras.utils.data_utils import get_file
 weight = get_file(
             'the name under the model will be saved',
             'https://github.com/Armaan-20/object_detection_yolov3/blob/update/yolov3.weights?raw=true')
-cfg = 'darknet/cfg/yolov3-tiny.cfg'
+cfg = 'darknet/cfg/yolov3.cfg'
 
 net = cv2.dnn.readNet(weight, cfg)
 
