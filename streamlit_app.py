@@ -6,7 +6,7 @@ import numpy as np
 import urllib.request
 import tempfile
 import base64
-url = 'https://github.com/Armaan-20/object_detection_yolov3/blob/update/yolov3-tiny.weights?raw=true'
+url = 'https://media.githubusercontent.com/media/Armaan-20/object_detection_yolov3/update/yolov3-tiny.weights'
 w = urllib.request.urlopen(url)
 weight = w.read()
 cfg = 'darknet/cfg/yolov3-tiny.cfg'
