@@ -8,7 +8,7 @@ import tempfile
 import base64
 url = 'https://github.com/Armaan-20/object_detection_yolov3/blob/update/yolov3-tiny.weights?raw=true'
 w = urllib.request.urlopen(url)
-weight = w.readline()
+weight = w.read()
 cfg = 'darknet/cfg/yolov3-tiny.cfg'
 
 net = cv2.dnn.readNet(weight, cfg)
