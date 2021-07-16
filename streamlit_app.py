@@ -8,7 +8,7 @@ import tempfile
 import base64
 import tensorflow as tf
 from tensorflow import keras
-from tf.python.keras.utils.data_utils import get_file
+from tensorflow.python.keras.utils.data_utils import get_file
 weight = get_file(
             'the name under the model will be saved',
             'https://pjreddie.com/media/files/yolov3.weights')
